@@ -1,6 +1,6 @@
 # Performance Tests
 
-## Fucntions, Loops, and Inlining
+## Functions, Loops, and V8 Inlining
 
 Run Test with V8 inlining enabled:
 
