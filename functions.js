@@ -3,7 +3,10 @@
 const interations = 1000000000n;
 
 function add(a, b) {
-  return a + b;
+  const aStr = a.toString();
+  const bStr = b.toString();
+  const temp = BigInt(aStr) + BigInt(bStr);
+  return temp;
 }
 
 function doCalcultionUsingFunction() {
@@ -17,8 +20,11 @@ function doCalcultionUsingFunction() {
 function doCalcultionWithoutUsingFunction() {
   let sum = 0n;
   for (let i = 0n; i < interations; i++) {
-    sum += i + 5n;
-  }
+    const aStr = i.toString();
+    const bStr = (i + 5n).toString();
+    const temp = BigInt(aStr) + BigInt(bStr);
+    sum += temp;
+    }
   return sum;
 }
 
